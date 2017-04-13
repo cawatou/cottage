@@ -7,7 +7,9 @@ $this->title = 'Главная';
         <div class="content">
             <div class="fullheight-carousel-holder">
                 <div class="customNavigation">
-                    <a class="modalmain_btn"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a class="modalmain_btn">
+                        <div data-prefix="glyphicons" data-type="" data-name="envelope" data-utf="E011" data-position="2 - a"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+                    </a>
                 </div>
                 <div class="fullheight-carousel owl-carousel">
                     <?if(isset($model)):?>
