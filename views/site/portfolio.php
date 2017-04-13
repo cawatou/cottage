@@ -34,22 +34,22 @@ $this->params['breadcrumbs'][] = $this->title;
                 <section class="no-padding no-border">
                     <div class="gallery-items  three-coulms hid-port-info">
                         <?foreach($item_model as $item):?>
-
-                        <div class="gallery-item cat<?=$item->cat_id?>">
-                            <div class="grid-item-holder">
-                                <div class="box-item">
-                                    <a href="/item?id=<?=$item->id?>" class="ajax">
-                                        <span class="overlay"></span>
-                                        <img  src="images/items/<?=$item->img?>"   alt="">
-                                    </a>
-                                </div>
-                                <div class="grid-item ">
-                                    <h3><a href="/item?id=<?=$item->id?>" class="ajax portfolio-link"><?=$item->name?></a></h3>
-                                    <?$i = $item->cat_id?>
-                                    <span><?=$cat_model[$i-1]->name?></span>
+                            <div class="gallery-item cat<?=$item->cat_id?>">
+                                <div class="grid-item-holder">
+                                    <div class="box-item">
+                                        <a href="/item?id=<?=$item->id?>" class="ajax">
+                                            <span class="overlay"></span>
+                                            <img  src="images/items/<?=$item->img?>"   alt="">
+                                        </a>
+                                    </div>
+                                    <div class="grid-item ">
+                                        <h3><a href="/item?id=<?=$item->id?>" class="ajax portfolio-link"><?=$item->name?></a></h3>
+                                        <?$i = $item->cat_id?>
+                                        <span><?=$cat_model[$i-1]->name?></span>
+                                        <span><b>Цена:</b> <?=$item->price?></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         <?endforeach?>
                     </div>
                 </section>
@@ -57,3 +57,4 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
+<?//echo "<pre>".print_r($item_model, 1)."</pre>";?>

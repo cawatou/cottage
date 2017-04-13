@@ -118,3 +118,28 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+/*===================================================*/
+.three-coulms .gallery-item, .box-item a img {
+    height: 240px;
+}
+
+#contact-form .control-label {
+    font-size: 14px;
+}
+
+.contact-details ul li a {
+    font-size: 16px !important;
+}
+
+.logo-holder img {
+    height: 40px;
+}
+
+.callback_btn {
+    margin: 5px 0 0 20px;
+}
+
+.callback_btn:hover {
+    cursor: pointer;
+}

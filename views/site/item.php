@@ -13,16 +13,22 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="wrapper-inner full-height no-padding">
                     <div class="swiper-container" id="horizontal-slider" data-mwc="1" data-mwa="0">
                         <div class="swiper-wrapper">
-			    <?if(isset($gallery_model)):
-				foreach($gallery_model as $img):?>                            
-				    <div class="swiper-slide">
-					<br>
-					<div class="bg" style="background-image:url('images/items/<?=$img->src?>')"></div>
-					<div class="overlay"></div>
-					<div class="zoomimage"><img src="images/items/<?=$img->src?>" class="intense" alt=""><i class="fa fa-expand"></i></div>
-				    </div>
-				<?endforeach;	
-			    endif;?>
+                            <div class="swiper-slide">
+                                <br>
+                                <div class="bg" style="background-image:url('images/items/<?=$item_model->img?>')"></div>
+                                <div class="overlay"></div>
+                                <div class="zoomimage"><img src="images/items/<?=$item_model->img?>" class="intense" alt=""><i class="fa fa-expand"></i></div>
+                            </div>
+                            <?if(isset($gallery_model)):
+                                foreach($gallery_model as $img):?>
+                                    <div class="swiper-slide">
+                                        <br>
+                                        <div class="bg" style="background-image:url('images/items/<?=$img->src?>')"></div>
+                                        <div class="overlay"></div>
+                                        <div class="zoomimage"><img src="images/items/<?=$img->src?>" class="intense" alt=""><i class="fa fa-expand"></i></div>
+                                    </div>
+                                <?endforeach;
+                            endif;?>
                         </div>
                         <div class="swiper-nav-holder hor">
                             <a class="swiper-nav arrow-left transition " href="portfolio-single3.html#"><i class="fa fa-long-arrow-left"></i></a>

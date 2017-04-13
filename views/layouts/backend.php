@@ -25,7 +25,7 @@ AppAsset::register($this);
 <body>
 
 <?php $this->beginBody() ?>
-<div>Админка</div>
+<h2>Панель Администрирования</h2>
 <div>
     <?/*= Breadcrumbs::widget([
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],

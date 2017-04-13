@@ -49,3 +49,10 @@ $(document).ready(function() {
     })
 
 })
+
+
+/* Переключение слайда конопками клавиатуры */
+$(document).keyup(function (e) {
+    if(e.keyCode === 37) $('.arrow-left').click();
+    if(e.keyCode === 39) $('.arrow-right').click();
+})

@@ -37,7 +37,7 @@ $model = new ContactForm();
     <header>
         <div class="header-inner">
             <div class="logo-holder">
-                <a href="/" class="ajax"><img src="/images/logo.png" alt=""></a>
+                <a href="/" class="ajax"><img src="/images/logo.jpg" alt=""></a>
             </div>
             <div class="nav-button-holder">
                 <div class="nav-button vis-m"><span></span><span></span><span></span></div>

@@ -23,47 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="container">
                     <div class="page-title no-border">
                         <h2>Хочешь заказать проект ? Свяжись с нами</h2>
-                        <div id="tt" style="display:none">
-                            fdasfdasfdasfdasfa
-                        </div>
-                        <h3><span>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true .</span></h3>
-                    </div>
-                    <!-- map  -->
-                    <section class="no-border">
-                        <div class="map-box">
-                            <div>
-                                <?=$contact_model->map?>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- map  end-->
-                    <!-- contact info  -->
-                    <section class="no-border">
-                        <div class="contact-details">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h3>Контакты : </h3>
-                                </div>
-                                <div class="col-md-3">
-                                    <h4>Офис в Санкт-Петербурге</h4>
-                                    <ul>
-                                        <li><a href="#"><?=$contact_model->address?></a></li>
-                                        <li><a href="#"><?=$contact_model->phone?></a></li>
-                                        <li><a href="#"><?=$contact_model->email?></a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-3">
-                                    <h4>Ищите нас : </h4>
-                                    <ul>
-                                        <li><a href="contact.html#">Facebook</a></li>
-                                        <li><a href="contact.html#">Twitter </a></li>
-                                        <li><a href="contact.html#">Instagram</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- contact info  end-->
+                    </div>                   
                     <!-- contact form -->
                     <section>
                         <div class="contact-form-holder">
@@ -85,6 +45,44 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                     </section>
                     <!-- contact form  end-->
+                    
+                    <!-- contact info  -->
+                    <section class="no-border">
+                        <div class="contact-details">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h3>Контакты : </h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <h4>Офис в Санкт-Петербурге</h4>
+                                    <ul>
+                                        <li><a href="#"><?=$contact_model->address?></a></li>
+                                        <li><a href="#"><?=$contact_model->phone?></a></li>
+                                        <li><a href="#"><?=$contact_model->email?></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h4>Ищите нас : </h4>
+                                    <ul>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Twitter </a></li>
+                                        <li><a href="#">Instagram</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- contact info  end-->
+
+                    <!-- map  -->
+                    <section class="no-border">
+                        <div class="map-box">
+                            <div>
+                                <?=$contact_model->map?>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- map  end-->
                 </div>
             </div>
             <!-- wrapper inner end   -->

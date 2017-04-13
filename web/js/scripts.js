@@ -224,8 +224,10 @@ function initDomik() {
             var a = $(".background-video").data("ytPlayer").player;
         }
     });
+
+
 	// isotope ------------------
-    function n() {
+   function n() {
         if ($(".gallery-items").length) {
             var a = $(".gallery-items").isotope({
                 singleMode: true,
@@ -247,6 +249,7 @@ function initDomik() {
             });
         }
     }
+
     n();
     $(window).load(function() {
         n();
