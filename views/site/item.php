@@ -47,18 +47,18 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="project-details">
                             <h3>Описание проекта</h3>
                             <ul class="descr">
-                                <?if(isset($item_model->price)):?><li><span>Цена :</span> <?=$item_model->price?> руб</li><?endif?>
-                                <?if(isset($item_model->place)):?><li><span>Место строительства дома :</span> <?=$item_model->place?></li><?endif?>
-                                <?if(isset($item_model->square)):?><li><span>Площадь :</span> <?=$item_model->square?> м<sup>2</sup> </li><?endif?>
-                                <?if(isset($item_model->f_square)):?><li><span>Общая площадь :</span> <?=$item_model->f_square?> м<sup>2</sup> </li><?endif?>
-                                <?if(isset($item_model->project)):?><li><span>Проект дома :</span> <?=$item_model->project?> </li><?endif?>
-                                <?if(isset($item_model->complectation)):?><li><span>Комплектация :</span> <?=$item_model->complectation?> </li><?endif?>
-                                <?if(isset($item_model->type)):?><li><span>Тип фундамента :</span> <?=$item_model->type?></li><?endif?>
-                                <?if(isset($item_model->material)):?><li><span>Материал наружных стен :</span>  <?=$item_model->material?> </li><?endif?>
-                                <?if(isset($item_model->floor)):?><li><span>Межэтажное перекрытие :</span> <?=$item_model->floor?> </li><?endif?>
-                                <?if(isset($item_model->roof)):?><li><span>Кровля :</span> <?=$item_model->roof?> </li><?endif?>
-                                <?if(isset($item_model->facing)):?><li><span>Наружная отделка :</span> <?=$item_model->facing?> </li><?endif?>
-                                <?if(isset($item_model->consist)):?><li><span>Состав грунта и размер участка :</span> <?=$item_model->consist?> </li><?endif?>
+                                <?if(isset($item_model->price)):?><li><span>Цена:</span> <?=number_format($item_model->price, 0, ' ', ' ')?> руб</li><?endif?>
+                                <?if(isset($item_model->place)):?><li><span>Место строительства дома:</span> <?=$item_model->place?></li><?endif?>
+                                <?if(isset($item_model->square)):?><li><span>Площадь:</span> <?=$item_model->square?> м<sup>2</sup> </li><?endif?>
+                                <?if(isset($item_model->f_square)):?><li><span>Общая площадь:</span> <?=$item_model->f_square?> м<sup>2</sup> </li><?endif?>
+                                <?if(isset($item_model->project)):?><li><span>Проект дома:</span> <?=$item_model->project?> </li><?endif?>
+                                <?if(isset($item_model->complectation)):?><li><span>Комплектация:</span> <?=$item_model->complectation?> </li><?endif?>
+                                <?if(isset($item_model->type)):?><li><span>Тип фундамента:</span> <?=$item_model->type?></li><?endif?>
+                                <?if(isset($item_model->material)):?><li><span>Материал наружных стен:</span>  <?=$item_model->material?> </li><?endif?>
+                                <?if(isset($item_model->floor)):?><li><span>Межэтажное перекрытие:</span> <?=$item_model->floor?> </li><?endif?>
+                                <?if(isset($item_model->roof)):?><li><span>Кровля:</span> <?=$item_model->roof?> </li><?endif?>
+                                <?if(isset($item_model->facing)):?><li><span>Наружная отделка:</span> <?=$item_model->facing?> </li><?endif?>
+                                <?if(isset($item_model->consist)):?><li><span>Состав грунта и размер участка:</span> <?=$item_model->consist?> </li><?endif?>
                             </ul>
                         </div>
                         <div class="content-nav">

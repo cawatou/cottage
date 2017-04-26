@@ -46,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         <h3><a href="/item?id=<?=$item->id?>" class="ajax portfolio-link"><?=$item->name?></a></h3>
                                         <?$i = $item->cat_id?>
                                         <span><?=$cat_model[$i-1]->name?></span>
-                                        <span><b>Цена:</b> <?=$item->price?></span>
+                                        <span><b>Цена:</b> <?=number_format($item->price, 0, ' ', ' ')?></span>
                                     </div>
                                 </div>
                             </div>

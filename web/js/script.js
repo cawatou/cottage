@@ -34,7 +34,8 @@ $(document).ready(function() {
     })
 
     // Отправка заявки на обратную связь с главной страницы
-    $('.modalmain_btn').on('click', function(){
+    $('.modalmain_btn').on('click', function(e){
+        e.preventDefault();
         var mail_item = $('#mail_item').val();
         if(mail_item) {
             console.log(mail_item);

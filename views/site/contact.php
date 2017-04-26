@@ -22,12 +22,13 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="wrapper-inner">
                 <div class="container">
                     <div class="page-title no-border">
-                        <h2>Хочешь заказать проект ? Свяжись с нами</h2>
+                        <h2>Контакты</h2>
                     </div>                   
                     <!-- contact form -->
                     <section>
                         <div class="contact-form-holder">
                             <div id="contact-form">
+                                <h2>Свяжитесь с нами</h2>
                                 <div id="message"></div>
                                 <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
@@ -47,7 +48,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <!-- contact form  end-->
                     
                     <!-- contact info  -->
-                    <section class="no-border">
+                    <section class="no-border"  id="map_block">
                         <div class="contact-details">
                             <div class="row">
                                 <div class="col-md-4">

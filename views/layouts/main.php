@@ -11,10 +11,8 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use app\models\ContactForm;
 AppAsset::register($this);
-?>
-
-<?
 $model = new ContactForm();
+
 ?>
 
 <?php $this->beginPage() ?>

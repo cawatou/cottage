@@ -132,7 +132,7 @@ a.desc:after {
     font-size: 16px !important;
 }
 
-.logo-holder img {
+.logo-holder img, .footer-logo img {
     height: 40px;
 }
 
