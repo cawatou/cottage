@@ -30,7 +30,6 @@ $(document).ready(function() {
                 }
             }
         })
-
     })
 
     // Отправка заявки на обратную связь с главной страницы
@@ -48,12 +47,17 @@ $(document).ready(function() {
     $('.main_modal .close').on('click', function(){
         $('.main_modal').hide()
     })
-
 })
-
 
 /* Переключение слайда конопками клавиатуры */
 $(document).keyup(function (e) {
     if(e.keyCode === 37) $('.arrow-left').click();
     if(e.keyCode === 39) $('.arrow-right').click();
 })
+
+// Увеличение изображения при наведении
+$(".carousel-item").hover(function() {
+    $(this).addClass("vis-decor");
+}, function() {
+    $(this).removeClass("vis-decor");
+});

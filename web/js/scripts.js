@@ -164,11 +164,11 @@ function initDomik() {
     $(".fullheight-carousel-holder a.prev-slide").on("click", function() {
         $(this).closest(".fullheight-carousel-holder").find(g).trigger("owl.prev");
     });
-    $(".carousel-link-holder").hover(function() {
+    /*v
         $(this).parent(".carousel-item").addClass("vis-decor");
     }, function() {
         $(this).parent(".carousel-item").removeClass("vis-decor");
-    });
+    });*/
     var h = $(".single-slider");
     h.owlCarousel({
         singleItem: true,

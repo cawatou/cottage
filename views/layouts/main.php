@@ -48,6 +48,7 @@ $model = new ContactForm();
                         <li><a href="/portfolio" class="<?=($_SERVER['REQUEST_URI'] == '/portfolio')? 'act-link' : '';?>">Портфолио</a></li>
                         <li><a href="/contacts" class="<?=($_SERVER['REQUEST_URI'] == '/contacts')? 'act-link' : '';?>">Контакты</a></li>
                         <li><p class="callback_btn"><span class="glyphicon glyphicon-earphone"></span></p></li>
+                        <li><p class="phone">+7(921) 580 15 60</p></li>
                     </ul>
                 </nav>
             </div>

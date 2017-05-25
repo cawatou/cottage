@@ -140,7 +140,11 @@ a.desc:after {
     margin: 5px 0 0 20px;
 }
 
-.callback_btn:hover {
+.callback_btn:hover, .carousel-item:hover {
     cursor: pointer;
 }
 
+.header-inner .phone {
+    margin-top: 4px;
+    padding-left: 20px;
+}
