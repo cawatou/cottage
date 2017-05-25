@@ -58,16 +58,14 @@ $this->params['breadcrumbs'][] = $this->title;
                                     <h4>Офис в Санкт-Петербурге</h4>
                                     <ul>
                                         <li><a href="#"><?=$contact_model->address?></a></li>
-                                        <li><a href="#"><?=$contact_model->phone?></a></li>
-                                        <li><a href="#"><?=$contact_model->email?></a></li>
+                                        <li><p><?=$contact_model->phone?></p></li>
+                                        <li><p><?=$contact_model->email?></p></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-3">
                                     <h4>Ищите нас : </h4>
                                     <ul>
-                                        <li><a href="#">Facebook</a></li>
-                                        <li><a href="#">Twitter </a></li>
-                                        <li><a href="#">Instagram</a></li>
+                                        <li><a target="_blank" href="https://vk.com/piterremstroy">ВКонтакте</a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -18,7 +18,7 @@ $contact_model = Contacts::find()->one();
 			<div class="col-md-4">
 				<ul class="footer-contact">
 					<li><?=$contact_model->phone?></li>
-					<li><a href="mailto:<?=$contact_model->email?>"><?=$contact_model->email?></a></li>
+					<li><p><?=$contact_model->email?></p></li>
 				</ul>
 			</div>
 		</div>

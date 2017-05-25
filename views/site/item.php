@@ -54,7 +54,13 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <?if(isset($item_model->project)):?><li><span>Проект дома:</span> <?=$item_model->project?> </li><?endif?>
                                 <?if(isset($item_model->complectation)):?><li><span>Комплектация:</span> <?=$item_model->complectation?> </li><?endif?>
                                 <?if(isset($item_model->type)):?><li><span>Тип фундамента:</span> <?=$item_model->type?></li><?endif?>
-                                <?if(isset($item_model->material)):?><li><span>Материал наружных стен:</span>  <?=$item_model->material?> </li><?endif?>
+                                <?if(isset($item_model->material)):
+                                    $materials = explode(',', $item_model->material);?>
+                                    <li>
+                                        <span>Материал наружных стен:</span> 
+                                        <?foreach($materials as $material) echo $material.";<br>";?>                         
+                                    </li>
+                                <?endif?>
                                 <?if(isset($item_model->floor)):?><li><span>Межэтажное перекрытие:</span> <?=$item_model->floor?> </li><?endif?>
                                 <?if(isset($item_model->roof)):?><li><span>Кровля:</span> <?=$item_model->roof?> </li><?endif?>
                                 <?if(isset($item_model->facing)):?><li><span>Наружная отделка:</span> <?=$item_model->facing?> </li><?endif?>
@@ -64,7 +70,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="content-nav">
                             <div class="p-all">
                                 <input id="mail_item" type="hidden" value="<?=$item_model->name."(id = ".$item_model->id.")"?>">
-                                <a href="#" class="modalmain_btn"><span class="glyphicon glyphicon-plus-sign"></span></a>
+                                <a class="modalmain_btn"><span class="glyphicon glyphicon-plus-sign"></span></a>
                                 <a href="/portfolio" class="ajax"><i class="fa fa-th-large"></i></a>
                             </div>
                         </div>

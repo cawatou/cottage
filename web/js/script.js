@@ -33,7 +33,8 @@ $(document).ready(function() {
     })
 
     // Отправка заявки на обратную связь с главной страницы
-    $('.modalmain_btn').on('click', function(e){
+    $(document).on('click', '.modalmain_btn', function(e){
+        console.log('click');
         e.preventDefault();
         var mail_item = $('#mail_item').val();
         if(mail_item) {
@@ -55,9 +56,16 @@ $(document).keyup(function (e) {
     if(e.keyCode === 39) $('.arrow-right').click();
 })
 
-// Увеличение изображения при наведении
+// Увеличение изображений на главной при наведении
 $(".carousel-item").hover(function() {
     $(this).addClass("vis-decor");
 }, function() {
     $(this).removeClass("vis-decor");
+});
+
+// Увеличение иконки обратной связи при наведении
+$(".modalmain_btn").hover(function() {
+    $(this).addClass("glyphicons_zoom");
+}, function() {
+    $(this).removeClass("glyphicons_zoom");
 });
